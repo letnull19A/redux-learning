@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
+import dataReducer from './../features/data/userDataSlice'
 
 export const store = configureStore({
-  userData: {
-    name: "",
-    email: ""
+  reducer: {
+    data: dataReducer
   }
 });

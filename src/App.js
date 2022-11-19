@@ -1,14 +1,12 @@
 import './App.css';
 import { DataView } from './features/components/DataView'
-import { Provider } from 'react-redux';
-import { store } from './app/store';
+import Header from './features/components/Header'
 
 function App() {
   return (
     <div className="App">
-      <Provider store={store}>
+        <Header/>
         <DataView/>
-      </Provider>
     </div>
   );
 }
