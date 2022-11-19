@@ -12,12 +12,17 @@ export const dataSlice = createSlice({
   reducers: {
     setName: (state, action) => {
       state.name = action.payload
+    },
+    setEmail: (state, action) => {
+      state.email = action.payload
     }
   }
 });
 
 export const selectName = (state) => state.data.name;
 
-export const { setName } = dataSlice.actions;
+export const selectEmail = (state) => state.data.email;
+
+export const { setName, setEmail } = dataSlice.actions;
 
 export default dataSlice.reducer;
